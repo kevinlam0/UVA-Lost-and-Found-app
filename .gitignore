@@ -1,7 +1,7 @@
 ## EVIRONMENT VARIABLES FOR DEVELOPMENT ##
 ProjectKeys.json
 
-static
+
 
 # Django #
 *.log
