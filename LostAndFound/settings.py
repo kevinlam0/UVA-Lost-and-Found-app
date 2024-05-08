@@ -215,7 +215,7 @@ elif "DYNO" in os.environ:
 else:
     try:
         file = open('ProjectKeys.json')
-        data = json.load(file)
+        keys = json.load(file)
 
         DATABASES = {
             'default': {
@@ -224,13 +224,13 @@ else:
             }
         }
 
-        SECRET_KEY = data['DJANGO_SECRET_KEY']
+        SECRET_KEY = keys['DJANGO_SECRET_KEY']
 
-        SOCIALACCOUNT_PROVIDERS['google']['APP']['client_id'] = data['GoogleOAuth']['client_id']
-        SOCIALACCOUNT_PROVIDERS['google']['APP']['secret'] = data['GoogleOAuth']['secret']
+        SOCIALACCOUNT_PROVIDERS['google']['APP']['client_id'] = keys['GOOGLE_CLIENT_ID']
+        SOCIALACCOUNT_PROVIDERS['google']['APP']['secret'] = keys['GOOGLE_CLIENT_SECRET']
 
-        AWS_ACCESS_KEY_ID = data['S3']['AWS_ACCESS_KEY_ID']
-        AWS_SECRET_ACCESS_KEY = data['S3']['AWS_SECRET_ACCESS_KEY']
+        AWS_ACCESS_KEY_ID = keys['AWS_ACCESS_KEY_ID']
+        AWS_SECRET_ACCESS_KEY = keys['AWS_SECRET_ACCESS_KEY']
 
         file.close()
 
