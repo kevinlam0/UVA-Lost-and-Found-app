@@ -34,7 +34,7 @@ An example `ProjectKeys.json` file would look like this:
 }
 ```
 
-### Commands to run for first use
+### Commands to run first time using
 ```bash
 python manage.py initializelocations
 python manage.py migrate
