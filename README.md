@@ -1,6 +1,8 @@
 # UVA-Lost-and-Found-app
 
 ## Getting Started
+### Python Environment
+Have a Python environment to download all dependencies used and run the app. If you haven't already, you can install Python [here](https://www.python.org/downloads/).
 ### Prerequisites 
 Before running this application, ensure you have the prerequisite project keys configured:
 1. AWS S3 Access Key: To store and manage uploaded images, you'll need an AWS S3 bucket and access keys configured. If you don't have one, sign up for an AWS account and generate an access key in the IAM console. Ensure the access key is associated to an S3 bucket that will store your images.
