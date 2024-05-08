@@ -16,6 +16,8 @@ Once you obtained the necessary keys and credentials, set them as environment va
 - `GOOGLE_ALLAUTH_SECRET`: Your Google OAuth client secret
 - `DATABASE_URL`: The URL or connection string for your PostgreSQL database (Optional)
 - `DJANGO_SECRET_KEY`: Django secret key
+
+An example ProjectKeys.json file would look like this:
 ```json
 {
   "DJANGO_SECRET_KEY": "your_generated_secret_key_here",
