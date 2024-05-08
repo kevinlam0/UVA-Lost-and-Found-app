@@ -1,6 +1,6 @@
 # UVA-Lost-and-Found-app
 ## About the project
-This Django-based project was built to benefit the UVA community. There are currently no formal method to reporting lost and found items around university grounds, so addressing that was this application's purpose. More details may be found in our 'About Page' of our application.
+This Django-based project was built to benefit the UVA community. Our project is here to address the issue of having no formal method of reporting lost and found items around university grounds. More details may be found in our 'About Page' of our application.
 
 I worked along four others as the DevOps manager to implement technologies and tools that were used in this project, incorporating the software development and IT operations. On top of development of source code, I was responsible for incorporating Amazon S3, continuous integration, and deployment to Heroku. Currently, this app is no longer deployed on Heroku because it was a school-funded project. 
 
