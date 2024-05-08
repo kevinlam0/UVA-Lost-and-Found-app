@@ -2,7 +2,10 @@
 
 ## Getting Started
 ### Python Environment
-Have a Python environment to download all dependencies used and run the app. If you haven't already, you can install Python [here](https://www.python.org/downloads/).
+Have a Python environment to download all dependencies used and run the app. If you haven't already, you can install Python [here](https://www.python.org/downloads/). You can then install the dependencies with the command below in your terminal within this project's directory:
+```bash
+pip install -r requirements.txt
+```
 ### Prerequisites 
 Before running this application, ensure you have the prerequisite project keys configured:
 1. AWS S3 Access Key: To store and manage uploaded images, you'll need an AWS S3 bucket and access keys configured. If you don't have one, sign up for an AWS account and generate an access key in the IAM console. Ensure the access key is associated to an S3 bucket that will store your images. How to set up S3 bucket and IAM access keys [here](https://services.northwestern.edu/TDClient/30/Portal/KB/ArticleDet?ID=2025).
@@ -29,4 +32,15 @@ An example `ProjectKeys.json` file would look like this:
   "GOOGLE_CLIENT_SECRET": "your_google_client_secret_here",
   "DATABASE_URL": "your_database_url_here"
 }
+```
+
+### Commands to run for first use
+```bash
+python manage.py initializelocations
+python manage.py migrate
+```
+
+## To run
+```bash
+python manage.py runserver
 ```
