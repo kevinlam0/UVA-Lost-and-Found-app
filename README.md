@@ -9,10 +9,20 @@ Before running this application, ensure you have the prerequisite project keys c
 4. Django Secret Key: Used for cryptographic for hashing passwords.
 
 ### Environment Variables
-Once you obtained the necessary keys and credentials, set them as environment variables in your development environment. This app expects the following environment variables to be configured:
+Once you obtained the necessary keys and credentials, set them as environment variables in your development environment. This app expects the following environment variables to be configured from a `ProjectKeys.json` file that users will need to create manually in their local machine:
 - `AWS_ACCESS_KEY_ID`: Your AWS S3 access key ID
 - `AWS_SECRET_ACCESS_KEY`: Your AWS S3 secret access key
 - `GOOGLE_ALLAUTH_CLIENT_ID`: Your Google OAuth client ID
 - `GOOGLE_ALLAUTH_SECRET`: Your Google OAuth client secret
 - `DATABASE_URL`: The URL or connection string for your PostgreSQL database (Optional)
 - `DJANGO_SECRET_KEY`: Django secret key
+```json
+{
+  "DJANGO_SECRET_KEY": "your_generated_secret_key_here",
+  "AWS_ACCESS_KEY_ID": "your_aws_access_key_id_here",
+  "AWS_SECRET_ACCESS_KEY": "your_aws_secret_access_key_here",
+  "GOOGLE_CLIENT_ID": "your_google_client_id_here",
+  "GOOGLE_CLIENT_SECRET": "your_google_client_secret_here",
+  "DATABASE_URL": "your_database_url_here"
+}
+```
