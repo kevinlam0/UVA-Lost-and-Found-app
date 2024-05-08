@@ -2,7 +2,7 @@
 ## About the project
 This Django-based project was built to benefit the UVA community. There are currently no formal method to reporting lost and found items around university grounds, so addressing that was this application's purpose. 
 
-I worked along four others as the DevOps manager to implement technologies and tools that were used in this project, incorporating the software development and IT operations. On top of coding this project, I was responsible for incorporating Amazon S3, continuous integration, and deployment to Heroku. Currently, this app is no longer deployed on Heroku because it was a school-funded project. 
+I worked along four others as the DevOps manager to implement technologies and tools that were used in this project, incorporating the software development and IT operations. On top of development of the source code, I was responsible for incorporating Amazon S3, continuous integration, and deployment to Heroku. Currently, this app is no longer deployed on Heroku because it was a school-funded project. 
 
 ## Getting Started
 ### Python Environment
